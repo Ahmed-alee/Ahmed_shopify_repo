@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="https://cdn.shopify.com/shopifycloud/model-viewer-ui/assets/v1.0/model-viewer-ui.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
+
 {% assign selected_variant = product.selected_or_first_available_variant %}
 
 <script src="{{ 'product-model.js' | asset_url }}" defer></script>
@@ -33,7 +33,7 @@
  
 </style>
 
-<div x-data="{productModalOpen: false}">
+<div x-data="{productModalOpen: false}" x-cloak>
 
     <div class="max-w-6xl mx-auto my-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
